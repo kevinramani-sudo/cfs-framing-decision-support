@@ -3,13 +3,6 @@
 CFS MULTI-OBJECTIVE OPTIMIZATION FRAMEWORK —
 Cold-Formed Steel Residential Framing — NSGA-II Implementation
 ═══════════════════════════════════════════════════════════════════════════════
-Market references (2025 NZ):
-  - Steel supply-fabricate: NZ$4.50–7.00/kg (SCNZ 2024, fabricator quotes)
-  - Site labor wage: NZ$35/hr (ERI 2026); on-costs 37% → NZ$48/hr all-in
-  - CFS A1-A3 carbon: 2.10 kgCO2e/kg (imported EAF CFS, AS/NZS context; ICE DB v3.0)
-  - Transport: NZ$3.00/tonne-km (NZTA freight benchmark; Auckland-Waikato ~121 km)
-  - A5 installation: 3.20 kgCO2e/m² (BRANZ LCA data; includes diesel, waste, equipment)
-═══════════════════════════════════════════════════════════════════════════════
 """
 
 import numpy as np
@@ -510,10 +503,7 @@ class CFSProjectBaseline:
     k_prefab_overload_time = 0.30
     k_prefab_overload_carbon = 0.08
 
-    # ── NZ CALIBRATION CONSTRAINTS ────────────────────────────────────
-    # These are optimization-level feasibility and constructability constraints.
-    # They are not a substitute for detailed AS/NZS 4600 member design,
-    # connection design, bracing design, or building consent documentation.
+    # ── NZ CALIBRATION CONSTRAINTS ───────────────────────────────────
 
     # HARD FEASIBILITY CONSTRAINTS
     max_panel_width_m = 2.40          # conservative transport/factory limit
