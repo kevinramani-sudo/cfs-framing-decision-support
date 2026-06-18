@@ -1,4 +1,4 @@
-# cfs-thesis-dashboard
+# A Multi-Objective Decision-Support Framework for Early-Stage Cost–Carbon–Process-Hour Screening of Prefabricated Cold-Formed Steel Residential Framing in New Zealand
 Interactive dashboard and code archive for CFS framing cost-carbon-time optimisation thesis.
 # CFS Framing Optimisation Dashboard
 
